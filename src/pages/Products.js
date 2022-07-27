@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import image from "./jaleel.jpg";
 
 const Products = () => {
@@ -20,14 +20,33 @@ const Products = () => {
               <h1 class="font-bold px-3 ">Jaleel Sayal</h1>
               <p class="text-gray-400 font-bold">Software Develper</p> 
 
-                <NavLink to="/productDetails"> 
+                <Link to="/products/p1"> 
                 <button class="rounded-full bg-green-700 px-5 py-1 flex hover:bg-green-500 visited:bg-white">
                     {" "}
                     More Details
                 </button>
-              </NavLink>
+              </Link>
             </div>
           </div>
+          <div class="w-64 h-40 bg-slate-100 flex items-center rounded-lg">
+            <img
+              src={image}
+              alt="pic"
+              class="px-2 py-3 w-28 h-28 rounded-full "
+            ></img>
+            <div class="space-y-0.5">
+              <h1 class="font-bold px-3 ">Saram</h1>
+              <p class="text-gray-400 font-bold">Teacher</p> 
+
+                <Link to="/products/p2"> 
+                <button class="rounded-full bg-green-700 px-5 py-1 flex hover:bg-green-500 visited:bg-white">
+                    {" "}
+                    More Details
+                </button>
+              </Link>
+            </div>
+          </div>
+          
         
         </ul>
       </section>
